@@ -4,6 +4,7 @@ import "@vuepic/vue-datepicker/dist/main.css";
 import { ref } from "vue";
 import _ from "lodash";
 import functions from "@/functions";
+import constants from "@/constants";
 
 const {
   generateCSV,
@@ -13,9 +14,8 @@ const {
   getPaymentDay,
   endOfMonth,
   bonusDay,
-  monthNames,
-  WEEKEND,
 } = functions();
+const { monthNames, WEEKEND } = constants();
 const date = ref({
   hours: new Date().getHours(),
   minutes: new Date().getMinutes(),
