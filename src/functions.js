@@ -9,6 +9,7 @@ const download = (csv) => {
   link.setAttribute("download", "payments.csv");
   document.body.appendChild(link);
   link.click();
+  link.remove();
 };
 
 const generateCSV = (data) => {
